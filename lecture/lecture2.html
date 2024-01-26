@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email and Password</title>
+
+    <!-- Internal CSS style -->
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+
+      form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        padding: 4px;
+        font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- Text Input -->
+      <label>
+        Text
+        <input type="text" name="text" />
+      </label>
+
+      <!-- Email Input -->
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <!-- Password Input -->
+      <label>
+        Password
+        <input type="password" name="pwd" minlength="5" maxlength="12" />
+      </label>
+
+      <!-- Telephone -->
+      <label>
+        Phone number
+        <input type="tel" name="phone" />
+      </label>
+      <button type="submit">Register</button>
+
+      <!-- Numbers -->
+      <label
+        >Age
+        <input type="number" name="age" value="0" min="18" max="120" />
+      </label>
+      <!-- kapag wala yung value, min and max, by 1 lang ang incremint kada click ng arrow up and down -->
+
+      <!-- Range Input -->
+
+      <label>
+        Interest rate:
+        <input
+          type="range"
+          name="interest_rate"
+          value="40"
+          min="0"
+          max="100"
+          step="20"
+        />
+      </label>
+
+      <!-- Date and Time -->
+
+      <label>
+        Date
+        <input type="date" />
+      </label>
+
+      <label>
+        Time
+        <input type="time" />
+      </label>
+
+      <label>
+        Date and time
+        <input type="datetime-local" />
+      </label>
+    </form>
+  </body>
+</html>

@@ -416,6 +416,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container footer-form">
+          <form name="subscribe_form" autocomplete="on" method="">
+            <label class="footer-form_label">
+              Subscribe
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-form-input"
+                required
+              />
+            </label>
+
+            <button type="submit" class="footer-form-button">
+              Subscribe
+              <svg class="footer-form-svgsubscribe">
+                <use href="./images/icons.svg#submit"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -426,6 +447,60 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form name="modal-form">
+          <!-- Name -->
+          <label class="form-field">
+            <span class="form-label">Name</span>
+            <input class="form-input" type="text" name="user-name" />
+            <!-- svg here -->
+            <svg class="form-input-icon">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </label>
+
+          <!-- Phone -->
+          <label class="form-field">
+            <span class="form-label">Phone</span>
+            <input class="form-input" type="tel" name="user-phone" />
+            <svg class="form-input-icon">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </label>
+
+          <!-- Email -->
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input class="form-input" type="email" name="user-email" />
+            <svg class="form-input-icon">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </label>
+
+          <!-- Comment -->
+          <label class="form-field">
+            <span class="form-label">Comment</span>
+            <textarea
+              class="form-textarea"
+              name="user-feedback"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <!-- Terms and Privacy Policy -->
+          <label class="form-agreement">
+            <input class="form-checkbox" type="checkbox" name="user-terms" />
+            <span class="form-agreement-box-text"
+              >I accept the terms and conditions of the
+              <a class="form-terms" href="">Privacy Policy</a></span
+            >
+          </label>
+
+          <!-- Form Button -->
+          <div class="form-button-container">
+            <button class="form-button" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements of Form</title>
+  </head>
+  <body>
+    <form>
+      <!-- 1st Approach -->
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <!-- next sample na walang auto focus ng cursor sa input text -->
+      <label>Email</label>
+      <input type="email" name="email" />
+
+      <!-- 2nd Approach -->
+
+      <!-- same sa 1st approach, pero gumagamit ng atrb na "for" -->
+      <label for="user_email">Email</label>
+      <input type="email" name="email" id="user_email" />
+
+      <!-- focus atrb -->
+      <label
+        >Email
+        <input type="email" name="email" autofocus />
+      </label>
+
+      <!-- Place Holder atrb -->
+      <!-- Nagbibigay ng hint sa user -->
+      <label
+        >Email
+        <input
+          type="email"
+          name="email"
+          autofocus
+          placeholder="email@mail.com"
+        />
+      </label>
+
+      <!-- Input Element -->
+      <!-- Blank lang sya -->
+      <input type="text" name="username" />
+    </form>
+  </body>
+</html>

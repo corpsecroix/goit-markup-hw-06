@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 3 Radio Buttons vs Checkbox</title>
+  </head>
+  <body>
+    <form>
+      <!-- Radio Buttons -->
+      <!-- dapat pare-pareho sila ng atrb name across radio buttons. why? para makapag-click tayo one at a time lang. kapag pinalitan natin hal. binago natin atrb name ng 2nd button name="color2" and name="color3", nalalagyan ng check ng sabay2 lahat ng radio buttons.  You should have the same name atrbs in order to select only one answer. -->
+      <p>Choose a color:</p>
+      <label>
+        <input type="radio" name="color" value="red" />
+        Red
+      </label>
+      <label>
+        <input type="radio" name="color" value="white" checked />
+        White
+      </label>
+      <label>
+        <input type="radio" name="color" value="green" />
+        Green
+      </label>
+
+      <!-- Check Box -->
+      <!-- sa checkbox naman, we can select multiple elements even though we have the same name atrb -->
+      <label>
+        <input type="checkbox" name="color" value="red" />
+        Red
+      </label>
+      <label>
+        <input type="checkbox" name="color" value="white" checked />
+        White
+      </label>
+      <label>
+        <input type="checkbox" name="color" value="green" />
+        Green
+      </label>
+    </form>
+  </body>
+</html>
