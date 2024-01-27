@@ -574,6 +574,11 @@ body {
 
 /* continuation bukas -start-*/
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-form-input {
   color: var(--white);
   width: 264px;
@@ -620,6 +625,13 @@ body {
 .footer-form-svgsubscribe {
   width: 24px;
   height: 24px;
+  color: var(--white);
+}
+
+.footer-form_label {
+  display: block;
+  color: var(--white);
+  font-weight: 500;
 }
 
 /* continuaton bukas -end- */
