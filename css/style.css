@@ -164,7 +164,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  gap: 0 120px;
 }
 
 .logo {
@@ -576,7 +576,9 @@ body {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  /* added this margin top from email-label */
+  /* margin-top: 16px; */
 }
 
 .footer-form-input {
@@ -585,7 +587,7 @@ body {
   height: 40px;
   padding: 8px 16px;
   display: flex;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   font-size: 14px;
   background: var(--navyblue);
   border-radius: 4px;
@@ -622,10 +624,17 @@ body {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-button:focus,
+.footer-form-buton:hover {
+}
+
 .footer-form-svgsubscribe {
   width: 24px;
   height: 24px;
-  color: var(--white);
+  fill: currentColor;
+  /* for svg icon, we use "fill" 
+  fill: white; 
+  or use currentColor because it will inherit our color in color button */
 }
 
 .footer-form_label {
@@ -669,7 +678,7 @@ body {
 }
 
 .modal {
-  padding: 24px;
+  padding: 72px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -691,7 +700,6 @@ body {
   letter-spacing: 0.32px;
   text-align: center;
   color: var(--navyblue);
-  margin-top: 72px;
   margin-bottom: 30px;
 }
 
@@ -701,8 +709,8 @@ body {
 
 .modal-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 24px;
+  right: 24px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -741,6 +749,7 @@ body {
 .form-field {
   display: block;
   position: relative;
+  margin-bottom: 29px;
 }
 
 .form-label {
@@ -755,7 +764,6 @@ body {
 .form-textarea {
   width: 100%;
   /* margin: 0 0 29px 0; */
-  margin-bottom: 29px;
   padding: 11px 16px 11px 40px;
   border: 1px solid var(--navyblue);
   border-radius: 4px;
@@ -775,11 +783,14 @@ body {
   border-color: var(--iriscolor);
 }
 
+/* continuation ng pag edit bukas */
 .form-textarea {
-  padding-left: 16px;
+  /* padding-left: 16px; */
+  /* padding: 20px; */
   resize: none;
   height: 120px;
 }
+/* end ng pag edit, char! */
 
 .form-textarea::placeholder {
   color: var(--navyblue) rgba(46, 47, 66, 0.4);
@@ -792,7 +803,7 @@ body {
 .form-input-icon {
   position: absolute;
   transform: translateY(-50%);
-  top: 30%;
+  top: 50%;
   left: 13px;
   width: 18px;
   height: 24px;
