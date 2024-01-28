@@ -164,7 +164,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 0 120px;
+  gap: 0 102px;
 }
 
 .logo {
@@ -590,7 +590,6 @@ body {
 .email-label {
   margin-top: 16px;
   display: flex;
-  flex-direction: column;
 }
 
 .footer-form-input::placeholder {
@@ -616,14 +615,15 @@ body {
   letter-spacing: 0.64px;
   border-radius: 4px;
   color: var(--white);
-  background: var(--iriscolor);
+  background-color: var(--iriscolor);
   cursor: pointer;
-  transition: background color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-button:focus,
-.footer-form-buton:hover {
+.footer-form-button:hover {
+  background-color: var(--ocean);
 }
 
 .footer-form-svgsubscribe {
