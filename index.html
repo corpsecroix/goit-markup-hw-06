@@ -457,7 +457,7 @@
           <!-- Name -->
           <label class="form-field">
             <span class="form-label">Name</span>
-            <input class="form-input" type="text" name="user-name" />
+            <input class="form-input" type="text" name="user-name" required />
             <!-- svg here -->
             <svg class="form-input-icon">
               <use href="./images/icons.svg#person"></use>
@@ -467,7 +467,7 @@
           <!-- Phone -->
           <label class="form-field">
             <span class="form-label">Phone</span>
-            <input class="form-input" type="tel" name="user-phone" />
+            <input class="form-input" type="tel" name="user-phone" required />
             <svg class="form-input-icon">
               <use href="./images/icons.svg#phone"></use>
             </svg>
@@ -476,7 +476,7 @@
           <!-- Email -->
           <label class="form-field">
             <span class="form-label">Email</span>
-            <input class="form-input" type="email" name="user-email" />
+            <input class="form-input" type="email" name="user-email" required />
             <svg class="form-input-icon">
               <use href="./images/icons.svg#email"></use>
             </svg>
@@ -494,7 +494,14 @@
 
           <!-- Terms and Privacy Policy -->
           <label class="form-agreement">
-            <input class="form-checkbox" type="checkbox" name="user-terms" />
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-terms"
+            />
+            <svg class="form-checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#check-mark"></use>
+            </svg>
             <span class="form-agreement-box-text"
               >I accept the terms and conditions of the
               <a class="form-terms" href="">Privacy Policy</a></span

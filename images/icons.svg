@@ -168,6 +168,10 @@
     <symbol id="submit" viewBox="0 0 24 24">
       <path d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"/>
     </symbol>
+    <!-- Checkmark icon -->
+    <symbol id="check-mark" viewBox="0 0 42 32">
+    <path fill="#fff" style="fill: var(--color1); stroke: var(--color1)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
+    </symbol>
   </defs>
 </svg>
 
