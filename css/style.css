@@ -760,12 +760,11 @@ body {
   letter-spacing: 0.48px;
 }
 
-.form-input,
-.form-textarea {
+.form-input {
   width: 100%;
   /* margin: 0 0 29px 0; */
   padding: 11px 16px 11px 40px;
-  border: 1px solid var(--navyblue);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
   line-height: 0.87px;
@@ -773,6 +772,11 @@ body {
 
   color: var(--navyblue);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover + svg,
+.form-input:focus + svg {
+  fill: var(--iriscolor);
 }
 
 .form-input:hover,
@@ -783,17 +787,20 @@ body {
   border-color: var(--iriscolor);
 }
 
-/* continuation ng pag edit bukas */
+/* -done- */
 .form-textarea {
-  /* padding-left: 16px; */
+  padding: 11px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   /* padding: 20px; */
+  width: 100%;
   resize: none;
   height: 120px;
 }
-/* end ng pag edit, char! */
+/* -done- */
 
 .form-textarea::placeholder {
-  color: var(--navyblue) rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
